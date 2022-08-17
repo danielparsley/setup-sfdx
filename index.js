@@ -9,7 +9,7 @@ try {
 }
 
 function installSFDX(){
-  var download = 'wget https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz -q -P /tmp'
+  var download = 'wget https://developer.salesforce.com/media/salesforce-cli/sfdx/versions/7.160.0/65e206c/sfdx-v7.160.0-65e206c-linux-x64.tar.xz -q -P /tmp'
   var createDir = 'mkdir /tmp/sfdx'
   var unzip = 'tar xJf /tmp/sfdx-linux-x64.tar.xz -C /tmp/sfdx --strip-components 1'
   var install = 'echo "/tmp/sfdx/bin" >> $GITHUB_PATH'
